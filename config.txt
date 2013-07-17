@@ -1,0 +1,33 @@
+# Mystbot configuration
+
+{
+# Jabber account where Mystbot will login
+'SERVER': 'jabber.orgg',
+'PORT': 5222,
+'USERNAME': 'mystbot',
+'PASSWORD': 'password',
+'RESOURCE': 'mystbot' + str(random.randrange(1000, 9999)),
+
+# Proxy support
+#'HTTP_PROXY': 'http://192.168.2.1:3128',
+'HTTP_PROXY': '',
+
+# Chatroom nick
+'DEFAULT_NICK': 'mystbot',
+
+# Jabber accounts that will administrate Mystbot
+'ADMINS': ['jid1@crap.com', 'jid2@crap.com'],
+'ADMIN_PASSWORD': "EnterYourBotAccessPasswordHere",
+
+# Mystbot will try to reconnect on disconnections
+'AUTO_RESTART': 0,
+
+# Where to store HTML files from chatrooms logs
+# To disable logging, set to empty string: '',
+'PUBLIC_LOG_DIR': '/var/www/mystbot',
+
+# Where to store logs of private chats
+# To disable logging, set to empty string: '',
+'PRIVATE_LOG_DIR': 'privatechatlogs',
+
+}
